@@ -29,13 +29,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //テストデータの生成
-        val date = SimpleDateFormat("yyyy/MM/dd").format(Date())
-        val scheduleDataList = mutableListOf<ScheduleData>()
-        var cnt = 0
-        repeat((0..100).count()) {
-            cnt++
-            scheduleDataList.add(ScheduleData(cnt.toLong(), "テストデータ" + cnt, date.toString(), "detail"))
-        }
+//        val date = SimpleDateFormat("yyyy/MM/dd").format(Date())
+//        val scheduleDataList = mutableListOf<ScheduleData>()
+//        var cnt = 0
+//        repeat((0..100).count()) {
+//            cnt++
+//            scheduleDataList.add(ScheduleData(cnt.toLong(), "テストデータ" + cnt, date.toString(), "detail"))
+//        }
 
         //RecyclerViewにAdapterとLayoutManagerを設定
         findViewById<RecyclerView>(R.id.scheduleRecyclerView).also { recyclerView: RecyclerView ->
